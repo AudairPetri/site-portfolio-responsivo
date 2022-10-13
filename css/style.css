@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%; /* imagem do tamanho da tela*/
+    height: auto; /* imagem não distorce altura*/
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');/* .. volta um diretório*/
+}
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');/* .. volta um diretório*/
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: "Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-BoldIt.otf');/* .. volta um diretório*/
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    font-family: "Source Sans Pro";
+}
+
+.cabecalho{
+    background: white;
+    padding: 15px; /*margem do cabeçalho*/
+}
+
+.logo{
+    background-image: url("../img/logotipo-preto.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 53px;
+    text-indent: -99999px;
+    margin: 0;
+}
+
+.logo--branco{
+    background-image: url("../img/logotipo-branco.png");
+}
+
+.menu-principal__btn{
+    display: block;
+    width: 50px; /* tamanho do botão, junto com height*/
+    height: 50px;
+    text-indent: -999999px; /* tirar texto do campo*/
+    background-color: white; /* cor do fundo do botão*/
+    background-image: url(../img/menuprincipal-btn-bg.png); /* imagem do botão*/
+    background-repeat: no-repeat; /* se é para repetir o botão*/
+    background-position: 5px 5px; /* centraliza a imagem do botão*/
+    border-color: #c4c4c4; /* cor da borda do botão*/
+    border-style: solid; /* estilo de cor da borda*/
+    border-radius: 5px; /* arredonda a borda*/
+    cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-principal__btn--fechar{
+    background-position: -48px 7px; /* move imagem do botão*/
+}
+
+.menu-principal__lista{
+    padding: 0px;
+    list-style: none;
+}
+
+
+
+
+.menu-principal__item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block; /* para os 20px da margin funcionarem*/
+    font-size: 18px;
+}
+
+.menu-principal__item--atual{
+    color: #f44242;
+}
+
+/*rodapé*/
+
+.rodape{
+    color: #fff;
+}
+
+.rodape .logo{
+    margin-bottom: 20px;
+}
+
+.rodape__linha-1{
+    background-color: #272525;
+    background-image: url(../img/rodape-bg.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+
+.rodape__linha-2{
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.rodape__coluna{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.rodape__titulo{
+    border-bottom: 1px solid white;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+
+.rodape__lista-links{
+    padding: 0;
+    list-style: none;
+}
+
+.rodape__lista-links__item{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.rodape__lista-links__item::before{
+    content: '>';
+    margin-right: 8px;
+    color: #f44242;
+}

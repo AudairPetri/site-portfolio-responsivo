@@ -1,0 +1,43 @@
+.menu-principal__btn{
+    display: block;
+    width: 50px; /* tamanho do botão, junto com height*/
+    height: 50px;
+    text-indent: -999999px; /* tirar texto do campo*/
+    background-color: white; /* cor do fundo do botão*/
+    background-image: url(../img/menuprincipal-btn-bg.png); /* imagem do botão*/
+    background-repeat: no-repeat; /* se é para repetir o botão*/
+    background-position: 5px 5px; /* centraliza a imagem do botão*/
+    border-color: #c4c4c4; /* cor da borda do botão*/
+    border-style: solid; /* estilo de cor da borda*/
+    border-radius: 5px; /* arredonda a borda*/
+    cursor: pointer;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-principal__btn--fechar{
+    background-position: -48px 7px; /* move imagem do botão*/
+}
+
+.menu-principal__lista{
+    padding: 0px;
+    list-style: none;
+}
+
+
+
+
+.menu-principal__item{
+    text-decoration: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block; /* para os 20px da margin funcionarem*/
+    font-size: 18px;
+}
+
+.menu-principal__item--atual{
+    color: #f44242;
+}

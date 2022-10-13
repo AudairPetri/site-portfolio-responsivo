@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!-- linguagem -->
+<head>
+    <meta charset="UTF-8"><!-- tipo de caracteres -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- compatibilidade versões antigas IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- compatibilidade telas -->
+    <title>Design Resposivo - Início</title> <!--titulo site -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-home.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">Design Responsivo</h1>
+        <nav class="menu-principal"><!-- o NAV DEVE SER USADO SOMENTE EM MENU PRINCIPAL-->
+            <button class="menu-principal__btn">Abrir/fechar menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                <li><a class="menu-principal__item" href="portfolio.html">Portfólio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header class="cabecalho-home">
+            <h2 class="cabecalho-home__titulo">Texto grande</h2>
+            <p class="cabecalho-home__subtitulo">texto menor</p>
+            <a class="cabecalho-home__role" href="#servicos">Role para ver mais</a>
+        </header>
+        <section id="servicos" class="servico"><!-- seção de serviços // a id linka o #serviços acima-->
+            <h2 class="home__titulo">O que fazemos</h2>
+            <section class="servico__item">
+                <img src="img/icone-desenvolvimento-web.png" alt="globo de fundo vermelho com traços brancos">
+                <h3>Desenvolvimento</h3>
+                <p class="servico__texto">Texto aqui</p>
+            </section>
+            <section class="servico__item">
+                <img src="img/icone-cafe.png" alt="fundo vermelho com traços de xícara e vapor brancos">
+                <h3>Cloud</h3>
+                <p class="servico__texto">Texto aqui</p>
+            </section>
+            <section class="servico__item">
+                <img src="img/icone-carrinho-compras.png" alt="fundo vermelho com traços de carrinho de compras branco">
+                <h3>Processamento</h3>
+                <p class="servico__texto">Texto aqui</p>
+            </section>
+        </section><!-- fim seção serviços-->
+        <section class="depoimentos"><!-- seção depoimentos-->
+            <h2 class="home__titulo home__titulo--white">O que falam de nós</h2>
+            <section class="depoimentos__item">
+                <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa 1">
+                <p class="depoimentos__texto">Depoimento</p>
+                <p class="depoimentos__pessoa">Nome pessoa - Cargo</p>
+            </section>
+        </section><!-- fim seção depoimentos -->
+    </main>
+    <footer class="rodape">
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html" class="logo logo--branco">Design Resposivo</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laudantium sed laborum iste aliquam quos nulla odit ducimus deleniti, delectus quaerat vero? Aspernatur, nobis? Aliquid iste dignissimos officiis iusto reprehenderit?</p>
+            </div>
+            <div  class="rodape__coluna">
+                <h2 class="rodape__titulo">Redes sociais</h2> <!-- MENU SECUNDÁRIO-->
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.youtube.com" target="_blank">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2> <!-- MENU SECUNDÁRIO-->
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="rodape__lista-links__item" href="portfolio.html">Portfólio</a></li>
+                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            <p>
+                © 2021 - Todos os direitos reservados - Audair Petri
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
